@@ -2,26 +2,68 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    font-size: 4em;
+    margin: 20px 0px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
 #content-wrapper {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
+    padding: 0px 50px;
     min-width: 400px;
     max-width: 1388px;
+    background-color: white;
 }
 
-.trending-wrapper, .topic-wrapper {
-    height: 300px;
-    width: 100%;
-    overflow: hidden;
+.article-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    margin-top: 40px;
 }
 
-.trending-article {
-    border-radius: 16px;
+.article {
+    border-radius: 4px;
     box-shadow: 0px 4px 16px -8px;
-    height: 200px;
-    display: inline-block;
     width: 30%;
-    margin: 1.33%;
+    overflow: hidden;
+    padding: 0px;
+    cursor: pointer;
+    transition: box-shadow 0.3s
+}
+
+.article:hover {
+    box-shadow: 0px 4px 24px -8px;
+}
+
+.article div {
+    padding: 0px !important;
+}
+
+.article p {
+    padding: 0px 8px !important;
+}
+
+.article-date {
+    text-align: right;
+}
+
+.article-title {
+    font-weight: bold;
+}
+
+.article img {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .topic-wrapper {
@@ -41,9 +83,24 @@ html {
     margin: 1.33%;
 }
 
+.article div {
+    align-self: flex-end;
+    padding: 8px 8px;
+}
+
+.article-date {
+    color: grey;
+}
+
+.break {
+    width: 100px;
+    border: 1px solid black;
+}
+
 footer {
     text-align: center;
     font-size: 0.8em;
     padding: 10px 0;
     color: black;
+    margin-top: 90px;
 }
