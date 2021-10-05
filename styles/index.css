@@ -1,0 +1,49 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    min-width: 400px;
+    max-width: 1388px;
+}
+
+.trending-wrapper, .topic-wrapper {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.trending-article {
+    border-radius: 16px;
+    box-shadow: 0px 4px 16px -8px;
+    height: 200px;
+    display: inline-block;
+    width: 30%;
+    margin: 1.33%;
+}
+
+.topic-wrapper {
+    background-color: black;
+    height: 250px;
+    border-radius: 16px;
+    margin-top: 20px;
+    color: white;
+}
+
+.topic-article {
+    border-radius: 16px;
+    border: 1px solid white;
+    height: 145px;
+    display: inline-block;
+    width: 30%;
+    margin: 1.33%;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px 0;
+    color: black;
+}
