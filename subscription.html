@@ -2,69 +2,97 @@
 <html lang="en">
 
 <head>
-    <title>Subscription</title>
     <meta name="description" content="This is a Subscription page" />
-    <meta name="keywords" content="Subscribe" />
-    <link rel="shortcut icon" href= "assets/favicon.png" />
-    <link rel="stylesheet" href="css/subscription.css" />
+    <meta name="keywords" content="Subscription" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription | Toronto Lifestyle</title>
+    <link rel="shortcut icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="Styles/subscriptionstyle.css" />
 </head>
+<header class="header-container">
+    <figure class="logo">
+        <a href="index.html">
+            <img src="assets/images/logo.svg" alt="logo">
+        </a>
+    </figure>
+    <nav class="header-nav-items">
+        <a href="">Culture</a>
+        <a href="">Raccoons</a>
+        <a href="">Restaurants</a>
+        <a href="">Style</a>
+        <a href="">Events</a>
+        <a class="selected" href="videos.html">Videos</a>
+    </nav>
+</header>
 
 <body> 
-   
-    <nav>
-        <ul>
-          <a href=""><strong>Home</strong></a>
-          <a href=""><strong>Articles</strong></a>
-          <a href=""><strong>Search Page</strong></a>
-          <a href=""><strong>Videos</strong></a>
-          <a href=""><strong>Newsletter</strong></a>
-          <a href=""><strong>Subscription</strong></a>
-          <a href=""><strong>About Us</strong></a>
-          <a href=""><strong>Videos</strong></a>
-        </ul>
-    </nav>
-
-    <header>
-        <P>Support quality journalism and content.</P>
-        <p1>Get the best coverage - one that has both breadth and depth - about life in Toronto</p1>
-       </header>
-   
-
     <main>
-        <h1 id="SubBasic"> Basic</h1>
-        <p2 id="content">Access to 1 articles and videos per week limited to 1 category to select. </p2>
-        <p3 class="Price">$3 per month</p3>
+        <h1 class="page-title">Subscription</h1>
+        <div class="break"></div>
+        <p class = "page-subtitle">Support quality journalism and content by getting the best coverage about life in Toronto</p>
 
-        <h1 id="SubStandard"> Standard</h1>
-        <p2 id="content">Access to 3 articles and videos per week limited to 3 category to select. </p2>
-        <p3 class="Price">$10 per month</p3>
+        <div class="subscription-list">
+            <div class ="subscription">
+                <h2 id="subheader"> Basic Coverage</h2>
+                <div class="break center"></div>
+                <p id="subcontent">Access to 1 articles and videos per week limited to 1 category to select. </p>
+                <form action ="subscription_button" method="post">
+                    <input class ="subbutton" type="submit" value ="$3 per month">
+                </form>
+            </div>
+         
 
-        <h1 id="SubPremium"> Premium</h1>
-        <p2 id="content">Access to unlimited articles and videos per week with unlimited category to select. </p2>
-        <p3 class="Price">$20 per month</p3>
+            <div class="subscription">
+                <h2 id="subheader"> Standard Coverage</h2>
+                <div class="break center"></div>
+                <p id="subcontent">Access to 10 articles and videos per week limited to 10 category to select. </p>
+                <form action ="subscription_button" method="post">
+                    <input class ="subbutton" type="submit" value ="$10 per month">
+                </form>
+            </div>
 
-        <div class="clear">
-            <li>Frequently Asked Questions <br/></li>
-            <li>What are the benefits of subscribing to Tech in Asia? <br/></li>
-            <li>What is the cancellation policy? <br/></li>
-            <li>View more FAQs <br /></li>
-            <br />
-            <br />
-            <br />
-          </div>
-
+            <div class="subscription">
+                <h2 id="subheader"> Premium Coverage</h2>
+                <div class="break center"></div>
+                <p id="subcontent">Access to unlimited articles and videos per week with unlimited category to select. </p>
+                <form action ="subscription_button" method="post">
+                    <input class ="subbutton" type="submit" value ="$20 per month">
+                </form>
+            </div>
+        </div>
     </main>
-
-    <aside>
-        
-    </aside>
+    <footer class="footer-container">
+        <div class="nav-bars">
+            <nav class="left-footer-nav-items">
+                <a href="">About Us</a>
+                <a href="">FAQ</a>
+                <a href="">Newsletters</a>
+                <a href="subscription.html">Subscriptions</a>
+                <a href="">Terms of Service</a>
+                <a href="">Privacy Policy</a>
+            </nav>
+            <nav class="right-footer-nav-items">
+                <a href="">
+                    <img src="/assets/images/facebook.svg" alt="facebook link">
+                </a>
+                <a href="">
+                    <img src="/assets/images/twitter.svg" alt="twitter link">
+                </a>
+                <a href="">
+                    <img src="/assets/images/tiktok.svg" alt="tiktok link">
+                </a>
+                <a href="">
+                    <img src="/assets/images/youtube.svg" alt="youtube link">
+                </a>
+                <a href="">
+                    <img src="/assets/images/flickr.svg" alt="flickr link">
+                </a>
+            </nav>
+        </div>
+        <p class="copyright">&copy; 2021 Toronto Today</p>
+    </footer>
 </body>
-
-
-
-
-<footer>
-    &copy; 2021 LIFE IN TORONTO!<br>
-</footer>
-
 </html>
