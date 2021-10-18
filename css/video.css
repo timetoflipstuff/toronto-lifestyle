@@ -1,0 +1,68 @@
+@media only screen and (max-width: 414px) {
+  main {
+      width: 90% !important;
+  }
+
+  main .card-list .card {
+    width: 100% !important;
+  }
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+main h1 {
+  font-size: 4em;
+  margin: 20px 0px;
+}
+
+main .card-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+main .card-list .card {
+  width: calc(33% - 48px);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 3px 11px #00000047;
+  min-width: 280px;
+  max-width: 360px;
+  overflow: hidden;
+  background: white;
+  margin-top: 40px;
+}
+
+main .card-list .card iframe {
+  width: 100%;
+}
+
+main .card-list .card article {
+  padding: 12px;
+}
+
+main .card-list .card h4.title {
+  clear: right;
+  margin-bottom: 8px;
+}
+
+main .card-list .card span.tag {
+  float: right;
+  padding: 6px;
+  color: red;
+  border: 1px solid;
+  font-size: 12px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.break {
+  width: 100px;
+  border: 1px solid black;
+}

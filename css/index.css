@@ -1,5 +1,11 @@
-html {
-    font-family: Arial, Helvetica, sans-serif;
+@media only screen and (max-width: 414px) {
+    main {
+        width: 90% !important;
+    }
+
+    .article {
+        width: 100% !important;
+    }
 }
 
 h1 {
@@ -11,31 +17,32 @@ h2 {
     margin-top: 20px;
 }
 
-#content-wrapper {
-    width: 70%;
+main {
+    width: 80%;
     margin: 0 auto;
-    padding: 0px 50px;
-    min-width: 400px;
-    max-width: 1388px;
-    background-color: white;
+    padding: 0;
 }
 
 .article-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: stretch;
-    margin-top: 40px;
 }
 
 .article {
     border-radius: 4px;
-    box-shadow: 0px 4px 16px -8px;
-    width: 30%;
+    box-shadow: 0px 3px 11px #00000047;
+    width: calc(33% - 48px);
+    min-width: 280px;
+    max-width: 360px;
     overflow: hidden;
     padding: 0px;
     cursor: pointer;
-    transition: box-shadow 0.3s
+    transition: box-shadow 0.3s;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin-top: 40px;
 }
 
 .article:hover {
@@ -52,6 +59,7 @@ h2 {
 
 .article-date {
     text-align: right;
+    color: grey;
 }
 
 .article-title {
@@ -66,41 +74,12 @@ h2 {
     padding: 0px;
 }
 
-.topic-wrapper {
-    background-color: black;
-    height: 250px;
-    border-radius: 16px;
-    margin-top: 20px;
-    color: white;
-}
-
-.topic-article {
-    border-radius: 16px;
-    border: 1px solid white;
-    height: 145px;
-    display: inline-block;
-    width: 30%;
-    margin: 1.33%;
-}
-
 .article div {
     align-self: flex-end;
     padding: 8px 8px;
 }
 
-.article-date {
-    color: grey;
-}
-
 .break {
     width: 100px;
     border: 1px solid black;
-}
-
-footer {
-    text-align: center;
-    font-size: 0.8em;
-    padding: 10px 0;
-    color: black;
-    margin-top: 90px;
 }
